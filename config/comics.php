@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'comics'=>[
     [
         "title" => "Action Comics #1000: The Deluxe Edition",
         "description" => "The celebration of 1,000 issues of Action Comics continues with a new, Deluxe Edition of the amazing comic that won raves when it hit comics shops in April! This hardcover includes all the stories from that issue, plus the tale by writer Paul Levitz and artist Neal Adams that appeared in the Action Comics: 80 Years Of Superman hardcover, as well as all the variant covers, design sketches by Jim Lee for Superman’s new look, scripts for the stories, the original art from the lost story featuring art by Curt Swan and more! Plus: a complete reprint of the stories that started it all—the Superman stories Action Comics #1 and 2 from 1938!",
@@ -214,93 +212,5 @@ return [
             "Joëlle Jones"
         ],
     ],
-],
-
-'navbar' => [ 
-    [
-    "text"=> "Characters",
-    "url"=> "characters",
-    "active"=> false,
-],
-[
-    "text"=> "Comics",
-    "url"=> "comics",
-    "active"=> true,
-],
-[
-    "text"=> "Movies",
-    "url"=> "movies",
-    "active"=> false,
-],
-[
-    "text"=> "TV",
-    "url"=> "tv",
-    "active"=> false,
-],
-[
-    "text"=> "Games",
-    "url"=> "games",
-    "active"=> false,
-],
-[
-    "text"=> "Collectibles",
-    "url"=> "collectibles",
-    "active"=> false,
-],
-[
-    "text"=> "Videos",
-    "url"=> "videos",
-    "active"=> false,
-],
-[
-    "text"=> "Fans",
-    "url"=> "fans",
-    "active"=> false,
-],
-[
-    "text"=> "News",
-    "url"=> "news",
-    "active"=> false,
-],
-[
-    "text"=> "Shop",
-    "url"=> "shops",
-    "active"=> false,
-]
-],
-
-'bluband' =>[
-
-    [
-        "text"=> "digital comics",
-        "icon"=> "card.png"
-        
-    ],
-
-    [
-        "text"=> "dc merchandise",
-        "icon"=> "shirt.png"
-        
-    ],
-
-    [
-        "text"=> "subscription",
-        "icon"=> "cards.png"
-        
-    ],
-
-    [
-        "text"=> "comic shop locator",
-        "icon"=> "where.png"
-        
-    ],
-
-    [
-        "text"=> "dc power visa",
-        "icon"=> "visa.svg"
-        
-    ]
-
-]
 ];
 

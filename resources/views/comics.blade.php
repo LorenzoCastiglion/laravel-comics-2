@@ -1,7 +1,7 @@
 
 <?php  
-
-$blu = config('comics.bluband');
+$comics = config('comics');
+$blu = config('utils.bluband');
 
 ?>
 

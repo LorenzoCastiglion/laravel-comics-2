@@ -1,7 +1,7 @@
 
 <?php  
 
-$links = config('comics.navbar');
+$links = config('utils.navbar');
 
 ?>
 <header>
