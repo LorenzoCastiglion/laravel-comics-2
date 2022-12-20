@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guest\ComController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
+
+Route::resource('/', ComController::class);
 
 Route::get('/', function () {
     $comics = config('comics.comics');
@@ -61,5 +64,7 @@ Route::get('/shop', function () {
    
     return view('shop');
 })->name('shop');
+
+
 
 

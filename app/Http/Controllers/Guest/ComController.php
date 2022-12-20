@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
+use App\Models\comic;
 use Illuminate\Http\Request;
 
 class ComController extends Controller
@@ -14,7 +15,8 @@ class ComController extends Controller
      */
     public function index()
     {
-        //
+        $comics = comic::all();
+        return view('/', compact('comics'));
     }
 
     /**
