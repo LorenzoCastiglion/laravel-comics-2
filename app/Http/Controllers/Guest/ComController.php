@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\comic;
 use Illuminate\Http\Request;
 
+
 class ComController extends Controller
 {
     /**
@@ -26,7 +27,32 @@ class ComController extends Controller
      */
     public function create()
     {
-        //
+
+        // $formData = $addComic->all();
+        // $newComic = new Comic;
+        // $newComic->title = $addComic['title'];
+        // $newComic->description = $addComic['description'];
+        // $newComic->thumb = $addComic['thumb'];
+        // $newComic->price = $addComic['price'];
+        // $newComic->sale_date = $addComic['sale_date'];
+        // $newComic->type = $addComic['type'];
+        // foreach($addComic['artists'] as $key => $artist){
+        //     if($key < count($addComic['artists']) -1){
+        //       $newComic->artists .= $artist . ', ';  
+        //     } else{
+        //         $newComic->artists .= $artist . '.';  
+        //     }
+            
+        // }
+        // foreach($addComic['writers'] as $key => $writer){
+        //     if($key < count($addComic['writers']) -1){
+        //         $newComic->writers .= $writer . ', ';
+        //     } else{
+        //         $newComic->writers .= $writer . '.';
+        //     }
+            
+        // }
+        // $newComic->save();
     }
 
     /**

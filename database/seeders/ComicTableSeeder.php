@@ -30,7 +30,7 @@ class ComicTableSeeder extends Seeder
                 if($key < count($comic['artists']) -1){
                   $newComic->artists .= $artist . ', ';  
                 } else{
-                    $newComic->artists .= $artist;  
+                    $newComic->artists .= $artist . '.';  
                 }
                 
             }
@@ -38,7 +38,7 @@ class ComicTableSeeder extends Seeder
                 if($key < count($comic['writers']) -1){
                     $newComic->writers .= $writer . ', ';
                 } else{
-                    $newComic->writers .= $writer;
+                    $newComic->writers .= $writer . '.';
                 }
                 
             }

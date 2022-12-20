@@ -19,8 +19,8 @@ return [
     "active"=> false,
 ],
 [
-    "text"=> "TV",
-    "url"=> "tv",
+    "text"=> "AddComics",
+    "url"=> "AddComics",
     "active"=> false,
 ],
 [
