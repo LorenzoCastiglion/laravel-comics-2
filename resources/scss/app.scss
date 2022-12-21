@@ -336,6 +336,12 @@ main{
 
     // show
 
+
+    .text-container{
+        height: 30vh;
+        overflow: scroll;
+    }
+
     .blue {
         background-color: #2B7CEC;
         height: 70px;

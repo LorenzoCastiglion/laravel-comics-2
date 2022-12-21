@@ -1,6 +1,6 @@
 
 <?php  
-$comics = config('comics');
+
 $blu = config('utils.bluband');
 
 ?>

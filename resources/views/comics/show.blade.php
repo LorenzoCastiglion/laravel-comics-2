@@ -34,7 +34,7 @@
                         <span class="check ms-2">Check Availability</span>
                     </div>
                 </div>
-                <div class="mt-3">
+                <div class="mt-3 text-container">
                     <p class="description">{{ $comic->description }}</p>
                 </div>
             </div>
