@@ -17,12 +17,12 @@ Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
-Route::resource('/', ComController::class);
+Route::resource('comics', ComController::class);
 
 Route::get('/', function () {
-    $comics = config('comics.comics');
-    return view('comics', compact('comics'));
-})->name('comics');
+    $comics = config('comics');
+    return view('home', compact('comics'));
+})->name('home');
 
 
 Route::get('/movies', function () {
@@ -30,10 +30,7 @@ Route::get('/movies', function () {
     return view('movies');
 })->name('movies');
 
-Route::get('/tv', function () {
-    
-    return view('tv');
-})->name('tv');
+
 
 Route::get('/games', function () {
    

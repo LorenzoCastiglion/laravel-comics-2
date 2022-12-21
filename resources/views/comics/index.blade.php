@@ -26,10 +26,13 @@ $blu = config('utils.bluband');
          <span>current series</span>
      </div>
       <div class="row d-flex flex-wrap   ">
-          @foreach($comics as $comic)
+          @foreach($comics as $key => $comic)
           <div class="carta">
              <div class="img-wrap">
-                <img src="{{$comic['thumb']}}" alt="">
+               <a href="{{route('comics.show', $key +1)}}">
+                  <img src="{{$comic['thumb']}}" alt="">
+               </a>
+              
              </div>
                    <p class="didascalia">{{$comic['title']}}</p>
           </div>

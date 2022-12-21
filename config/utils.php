@@ -10,7 +10,7 @@ return [
 ],
 [
     "text"=> "Comics",
-    "url"=> "comics",
+    "url"=> "comics.index",
     "active"=> true,
 ],
 [
@@ -19,8 +19,8 @@ return [
     "active"=> false,
 ],
 [
-    "text"=> "AddComics",
-    "url"=> "AddComics",
+    "text"=> "Add-Comics",
+    "url"=> "comics.create",
     "active"=> false,
 ],
 [
@@ -50,7 +50,7 @@ return [
 ],
 [
     "text"=> "Shop",
-    "url"=> "shops",
+    "url"=> "shop",
     "active"=> false,
 ]
 ],

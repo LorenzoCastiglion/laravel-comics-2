@@ -299,3 +299,141 @@ main{
         }
     }
     
+
+    // form style
+
+    .my-form {
+        background-color: black;
+        color: white;
+        margin: 50px 0;
+        border-radius: 3rem;
+        padding: 3rem 10rem;
+    
+        h1 {
+            color: #2B7CEC;
+        }
+    
+        * {
+            font-size: 1.2rem;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    
+        .my-btn {
+            background-color:  #2B7CEC;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            color: white;
+            border: 0;
+            transition: 0.3s all;
+    
+                &:hover {
+                    background-color:  #183763;
+                }
+        }
+    }
+
+
+    // show
+
+    .blue {
+        background-color: #2B7CEC;
+        height: 70px;
+        position: relative;
+    }
+    
+    .box-single-img {
+        position: absolute;
+        bottom: 370px;
+        border: 1px solid white;
+    
+        .comic {
+            position: absolute;
+            text-transform: uppercase;
+            background-color: #2B7CEC;
+            color: white;
+            padding: 0 5px;
+            font-size: 13px;
+        }
+    
+        .view {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            text-transform: uppercase;
+            background-color: #2B7CEC;
+            color: white;
+            padding: 0 5px;
+            font-size: 13px;
+        }
+    }
+    
+    h1, h5 {
+        color: #2B7CEC;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    .container-available {
+        background-color: rgb(49, 152, 49);
+        font-weight: bold;
+        border-bottom: 1px solid #357739;
+    
+        p {
+            display: inline-block;
+            margin: 0;
+            color: greenyellow;
+        }
+    
+        .available-price {
+            padding: 17px 25px 13px;
+        }
+    
+        .price {
+            color: white;
+        }
+    
+        .status {
+            margin-left: auto;
+        }
+    
+        .available {
+            padding: 17px 25px 13px;
+        }
+    
+        .check {
+            position: relative;
+            color: white;
+            text-decoration: none;
+            border-left: 1px solid black;
+            padding: 17px 25px 13px;
+            padding-right: 42px;
+            cursor: pointer;
+        }
+    
+        .check:after {
+            content: ".";
+            display: block;
+            font-size: 0;
+            position: absolute;
+            right: 19px;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-top: 6px solid white;
+            border-right: 4px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+    }
+    
+    .description {
+        color: grey;
+        font-size: 17px;
+    }
+    
+    .adv {
+        margin-top: -70px;
+        color: grey;
+    }
