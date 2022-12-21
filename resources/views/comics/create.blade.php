@@ -16,15 +16,15 @@
             <h1 class="text-center fs-1">Aggiungi il tuo Comic</h1>
             <div>
                 <label for="title">Titolo</label>
-                <input type="text" name="title" id="title">
+                <input type="text" name="title" id="title" required>
             </div>
             <div>
                 <label for="price">Prezzo $</label>
-                <input type="text" name="price" id="price" placeholder="25.99">
+                <input type="text" name="price" id="price" placeholder="25.99" required>
             </div>
             <div>
                 <label for="series">Series</label>
-                <input type="text" name="series" id="series">
+                <input type="text" name="series" id="series" required>
             </div>
             <div>
                 <label for="sale_date">Data di Uscita</label>
@@ -32,15 +32,18 @@
             </div>
             <div>
                 <label for="type">Tipo</label>
-                <input type="text" name="type" id="type" placeholder="es. comic book">
+                <select name="type" id="type" required>
+                    <option value="comic book" selected>Comic Book</option>
+                    <option value="graphic novel">Graphic Novel</option>
+                </select>
             </div>
             <div>
                 <label for="artists">Artisti</label>
-                <input type="text" name="artists" id="artists" placeholder="Artista1, Artista2,...">
+                <input type="text" name="artists" id="artists" placeholder="Artista1, Artista2,..." required>
             </div>
             <div>
                 <label for="writers">Scrittori</label>
-                <input type="text" name="writers" id="writers" placeholder="Scrittore1, Scrittore2,...">
+                <input type="text" name="writers" id="writers" placeholder="Scrittore1, Scrittore2,..." required>
             </div>
             <div>
                 <label for="description">Descrizione</label>

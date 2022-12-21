@@ -60,9 +60,9 @@ class ComController extends Controller
      * @param  int  $id
      * 
      */
-    public function show($id)
+    public function show(Comic $comic)
     {
-        $comic = comic::findOrFail($id);
+        
         return view('comics.show', compact('comic'));
     }
 
@@ -72,9 +72,9 @@ class ComController extends Controller
      * @param  int  $id
      *
      */
-    public function edit($id)
+    public function edit(Comic $comic)
     {
-        //
+        return view('comics.edit', compact('comic'));
     }
 
     /**
@@ -86,7 +86,18 @@ class ComController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $formData = $request->all();
+        $newComic = Comic::find($id);
+        $newComic->title = $formData['title'];
+        $newComic->description = $formData['description'];
+        $newComic->price = $formData['price'];
+        $newComic->sale_date = $formData['sale_date'];
+        $newComic->type = $formData['type'];
+        $newComic->artists = $formData['artists'];
+        $newComic->writers = $formData['writers'];
+        $newComic->save();
+
+        return redirect()->route('comics.show', $newComic->id);
     }
 
     /**
@@ -95,8 +106,9 @@ class ComController extends Controller
      * @param  int  $id
      *
      */
-    public function destroy($id)
+    public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+        return redirect()->route('comics.index');
     }
 }

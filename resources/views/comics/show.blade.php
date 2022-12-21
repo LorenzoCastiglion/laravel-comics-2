@@ -44,6 +44,18 @@
             </div>
         </div>
 
+        <div class=" d-flex gap-2 pb-3">
+            <a href="{{route('comics.edit', $comic->id)}}">
+            <button>modifica</button>
+            </a>
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="bg-danger"><i class="fa-solid fa-trash"></i></button>
+            
+            </form>
+        </div>
+
     </div>
 
 @endsection
